@@ -1,0 +1,50 @@
+Description: run loops without bashisms, so dash might cope
+ .
+ dateutils (0.2.3-0ubuntu1ppa1) natty; urgency=low
+ .
+   * Initial release
+Author: Sebastian Freundt <hroptatyr@fresse.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- dateutils-0.2.3.orig/test/dseq-cnt.2.sh
++++ dateutils-0.2.3/test/dseq-cnt.2.sh
+@@ -20,7 +20,11 @@ foo=`mktemp "/tmp/tmp.XXXXXXXXXX"`
+ bar=`mktemp "/tmp/tmp.XXXXXXXXXX"`
+ 
+ "${DSEQ}" "${BEG}" +1y "${END}" -f '%F	%a' > "${foo}"
+-for y in `seq ${BEG/-*/} ${END/-*/}`; do
++
++## strip month and dom from BEG and END in a way that works on dash
++BEG=`echo ${BEG} | sed 's/-.*//'`
++END=`echo ${END} | sed 's/-.*//'`
++for y in `seq ${BEG} ${END}`; do
+ 	"${GDATE}" -d "${y}-01-01" '+%F	%a'
+ done > "${bar}"
+ 
+--- dateutils-0.2.3.orig/test/dseq-cnt.3.sh
++++ dateutils-0.2.3/test/dseq-cnt.3.sh
+@@ -20,7 +20,11 @@ foo=`mktemp "/tmp/tmp.XXXXXXXXXX"`
+ bar=`mktemp "/tmp/tmp.XXXXXXXXXX"`
+ 
+ "${DSEQ}" "${BEG}" +1y "${END}" -f '%F	%a' > "${foo}"
+-for y in `seq ${BEG/-*/} ${END/-*/}`; do
++
++## strip month and dom from BEG and END in a way that works on dash
++BEG=`echo ${BEG} | sed 's/-.*//'`
++END=`echo ${END} | sed 's/-.*//'`
++for y in `seq ${BEG} ${END}`; do
+ 	"${GDATE}" -d "${y}-12-31" '+%F	%a'
+ done > "${bar}"
+ 
