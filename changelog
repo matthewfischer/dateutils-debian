@@ -1,3 +1,9 @@
+dateutils (0.2.4-0ubuntu1ppa1) natty; urgency=low
+
+  * bump, up to dateutils v0.2.4
+
+ -- Sebastian Freundt <hroptatyr@fresse.org>  Thu, 07 Feb 2013 19:31:36 +0000
+
 dateutils (0.2.3-0ubuntu1ppa1) natty; urgency=low
 
   * Initial release
