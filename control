@@ -1,22 +1,22 @@
 Source: dateutils
-Section: misc
+Section: devel
 Priority: extra
 Maintainer: Sebastian Freundt <hroptatyr@fresse.org>
 Build-Depends: gengetopt,
- autotools-dev, 
- gperf, 
- bison, 
+ autotools-dev,
+ gperf,
+ bison,
  flex,
- debhelper (>= 7.0.1),
+ debhelper (>= 9.0.0),
  dh-buildinfo
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://hroptatyr.github.com/dateutils/
 Vcs-Git: git://github.com/hroptatyr/dateutils.git
 Vcs-Browser: https://github.com/hroptatyr/dateutils/
 
 Package: dateutils
 Architecture: any
-Depends: ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: nifty command line date and time utilities
  Dateutils are a bunch of tools that revolve around fiddling
  with dates and times in the command line with a strong focus
