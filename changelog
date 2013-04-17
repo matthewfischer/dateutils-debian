@@ -1,3 +1,9 @@
+dateutils (0.2.4-0ubuntu2ppa1) natty; urgency=low
+
+  * test, try building with --program-prefix
+
+ -- Sebastian Freundt <hroptatyr@fresse.org>  Wed, 17 Apr 2013 07:02:53 +0000
+
 dateutils (0.2.4-0ubuntu1ppa2) natty; urgency=low
 
   * fix, mention README.md
