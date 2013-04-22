@@ -14,3 +14,9 @@ export DH_OPTIONS
 
 override_dh_auto_configure:
 	dh_auto_configure -- --program-prefix='dateutils.'
+
+override_dh_auto_clean:
+	rm -f info/dadd.manu info/dconv.man info/ddiff.mand info/dgrep.man \
+	info/dround.manu info/dseq.manu info/dtest.man info/strptime.man
+	dh_auto_clean
+
