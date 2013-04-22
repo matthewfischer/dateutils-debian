@@ -1,2 +1,2 @@
 version=3
-git://github.com/hroptatyr/dateutils/tags .*/v?(\d[\d\.]+)\.tar\.gz
+https://github.com/hroptatyr/dateutils/tags .*/v?(\d[\d\.]+)\.tar\.gz
