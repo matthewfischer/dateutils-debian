@@ -20,3 +20,8 @@ override_dh_auto_clean:
 	info/dround.manu info/dseq.manu info/dtest.man info/strptime.man
 	dh_auto_clean
 
+override_dh_auto_install:
+	dh_auto_install
+	# don't install lib and include
+	rm -r debian/dateutils/usr/lib
+	rm -r debian/dateutils/usr/include
