@@ -1,5 +1,5 @@
 Source: dateutils
-Section: devel
+Section: utils
 Priority: extra
 Maintainer: Matthew Fischer <matthew.fischer@ubuntu.com>
 Build-Depends: gengetopt,

@@ -3,27 +3,3 @@ dateutils (0.2.4-1) unstable; urgency=low
   * Initial release (Closes: #705897)
 
  -- Matthew Fischer <matthew.fischer@ubuntu.com>  Sun, 21 Apr 2013 21:27:48 -0600
-
-dateutils (0.2.4-0ubuntu2ppa1) natty; urgency=low
-
-  * test, try building with --program-prefix
-
- -- Sebastian Freundt <hroptatyr@fresse.org>  Wed, 17 Apr 2013 07:02:53 +0000
-
-dateutils (0.2.4-0ubuntu1ppa2) natty; urgency=low
-
-  * fix, mention README.md
-
- -- Sebastian Freundt <hroptatyr@fresse.org>  Thu, 07 Feb 2013 19:57:47 +0000
-
-dateutils (0.2.4-0ubuntu1ppa1) natty; urgency=low
-
-  * bump, up to dateutils v0.2.4
-
- -- Sebastian Freundt <hroptatyr@fresse.org>  Thu, 07 Feb 2013 19:31:36 +0000
-
-dateutils (0.2.3-0ubuntu1ppa1) natty; urgency=low
-
-  * Initial release
-
- -- Sebastian Freundt <hroptatyr@fresse.org>  Fri, 21 Sep 2012 15:25:10 +0000
