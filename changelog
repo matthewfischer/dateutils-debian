@@ -1,5 +1,12 @@
+dateutils (0.2.7-1) unstable; urgency=low
+
+  * New upstream release
+  * Corrected maintainer name spelling and email
+
+ -- Matt Fischer <mfisch@ubuntu.com>  Sun, 23 Mar 2014 06:22:14 +0100
+
 dateutils (0.2.5-1) unstable; urgency=low
 
   * Initial release (Closes: #705897)
 
- -- Matthew Fischer <matthew.fischer@ubuntu.com>  Sun, 11 Aug 2013 03:23:43 +0100
+ -- Matt Fischer <mfisch@ubuntu.com>  Sun, 11 Aug 2013 03:23:43 +0100

@@ -1,7 +1,7 @@
 Source: dateutils
 Section: utils
 Priority: extra
-Maintainer: Matthew Fischer <matthew.fischer@ubuntu.com>
+Maintainer: Matt Fischer <mfisch@ubuntu.com>
 Build-Depends: gengetopt,
  autotools-dev,
  gperf,
