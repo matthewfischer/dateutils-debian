@@ -1,3 +1,9 @@
+dateutils (0.3.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Matt Fischer <mfisch@ubuntu.com>  Mon, 25 Aug 2014 11:17:08 -0600
+
 dateutils (0.2.7-1) unstable; urgency=medium
 
   * New upstream release

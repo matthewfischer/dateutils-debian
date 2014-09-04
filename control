@@ -2,8 +2,7 @@ Source: dateutils
 Section: utils
 Priority: extra
 Maintainer: Matt Fischer <mfisch@ubuntu.com>
-Build-Depends: gengetopt,
- autotools-dev,
+Build-Depends: autotools-dev,
  gperf,
  bison,
  flex,
@@ -11,8 +10,9 @@ Build-Depends: gengetopt,
  dh-buildinfo,
  dh-autoreconf,
  dpkg-dev (>= 1.16.1~),
- help2man,
- libltdl-dev
+ libltdl-dev,
+ pkg-config,
+ texinfo
 Standards-Version: 3.9.5
 Homepage: http://www.fresse.org/dateutils
 Vcs-Git: git://github.com/hroptatyr/dateutils.git

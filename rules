@@ -18,10 +18,12 @@ override_dh_auto_configure:
 override_dh_auto_clean:
 	[ -f Makefile ] && dh_auto_clean || true
 	rm -f info/dadd.manu info/dconv.man info/ddiff.mand info/dgrep.man \
-	info/dround.manu info/dseq.manu info/dtest.man info/strptime.man
-
-override_dh_auto_install:
-	dh_auto_install
-	# don't install lib and include
-	rm -r debian/dateutils/usr/lib
-	rm -r debian/dateutils/usr/include
+	info/dround.manu info/dseq.manu info/dtest.man info/strptime.man \
+	info/dzone.man info/dsort.man \
+	src/*.yucc test/*.yucc lib/*.yucc \
+	lib/fmt-special.c \
+	lib/version.c \
+	lib/leapseconds.def \
+	.version \
+	info/dateutils.info \
+	src/dexpr-parser.[ch] src/dexpr-scanner.c src/strpdt-special.c \
