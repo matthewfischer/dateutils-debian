@@ -19,7 +19,13 @@ override_dh_auto_clean:
 	[ -f Makefile ] && dh_auto_clean || true
 	rm -f info/dadd.manu info/dconv.man info/ddiff.mand info/dgrep.man \
 	info/dround.manu info/dseq.manu info/dtest.man info/strptime.man \
-	info/dzone.man info/dsort.man \
+	info/dzone.man info/dsort.man info/dadd.h2m info/dadd.texi \
+	info/dconv.h2m info/dconv.texi info/ddiff.h2m info/ddiff.texi \
+	info/dgrep.h2m info/dgrep.texi info/dround.h2m info/dround.texi \
+	info/dseq.h2m info/dseq.texi info/dsort.h2m info/dsort.texi \
+	info/dtest.h2m info/dtest.texi info/dzone.h2m info/dzone.texi \
+	info/format-ddiff.th2m info/format.th2m info/strptime.h2m \
+	info/strptime.texi info/units.th2m \
 	src/*.yucc test/*.yucc lib/*.yucc \
 	lib/fmt-special.c \
 	lib/version.c \
