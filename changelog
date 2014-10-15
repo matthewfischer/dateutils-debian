@@ -1,20 +1,21 @@
 dateutils (0.3.1-1) unstable; urgency=medium
 
   * New upstream release
-    - Fixes #748653
+    - Closes: #748653
 
- -- Matt Fischer <mfisch@ubuntu.com>  Thu, 09 Oct 2014 18:27:08 -0600
+ -- Matt Fischer <mfisch@ubuntu.com>  Thu, 09 Oct 2014 18:27:08 -060 (0.2.7-1) unstable; urgency=medium
 
 dateutils (0.2.7-1) unstable; urgency=medium
 
-  * New upstream release
-  * Correct mainatiner name spelling and email
-  * Update standards version to 3.9.5
+  * New upstream release.
+  * Correct maintainer name spelling and email.
+  * Update standards version to 3.9.5 (no changes required).
+  * Bump debhelper version to 9 in debian/compat.
 
  -- Matt Fischer <mfisch@ubuntu.com>  Sun, 23 Mar 2014 20:35:22 -0600
 
 dateutils (0.2.5-1) unstable; urgency=low
 
-  * Initial release (Closes: #705897)
+  * Initial release. (Closes: #705897)
 
  -- Matt Fischer <mfisch@ubuntu.com>  Sun, 11 Aug 2013 03:23:43 +0100
