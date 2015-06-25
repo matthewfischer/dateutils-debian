@@ -3,27 +3,27 @@ author: Bastien ROUCARIÈS <roucariès.bastien+debian@gmail.com>
 
 bug-debian: https://bugs.debian.org/768995
 forwarded: not-needed
-Index: dateutils-0.3.1/m4/sxe-compiler.m4
+Index: dateutils-0.3.3/m4/sxe-compiler.m4
 ===================================================================
---- dateutils-0.3.1.orig/m4/sxe-compiler.m4
-+++ dateutils-0.3.1/m4/sxe-compiler.m4
-@@ -383,12 +383,13 @@ AC_DEFUN([SXE_OPTIFLAGS], [dnl
- 		## don't bother
- 		;;
- 	(*)
--		SXE_CHECK_COMPILER_FLAG([-xHost], [
--			optiflags="${optiflags} -xHost"], [
--			## non-icc
--			SXE_CHECK_COMPILER_FLAG([-mtune=native -march=native], [
--				optiflags="${optiflags} -mtune=native -march=native"])
--		])
-+	        # do not mtune
-+		#SXE_CHECK_COMPILER_FLAG([-xHost], [
-+		#	optiflags="${optiflags} -xHost"], [
-+		#	## non-icc
-+		#	SXE_CHECK_COMPILER_FLAG([-mtune=native -march=native], [
-+		#		optiflags="${optiflags} -mtune=native -march=native"])
-+		#])
- 		;;
- 	esac
- ])dnl SXE_OPTIFLAGS
+--- dateutils-0.3.3.orig/m4/sxe-compiler.m4
++++ dateutils-0.3.3/m4/sxe-compiler.m4
+@@ -415,12 +415,13 @@ Use code native to the build machine.])]
+ 			## don't bother
+ 			;;
+ 		(*)
+-			SXE_CHECK_COMPILER_FLAG([-xHost], [
+-				optiflags="${optiflags} -xHost"], [
+-				## non-icc
+-				SXE_CHECK_COMPILER_FLAG([-mtune=native -march=native], [
+-					optiflags="${optiflags} -mtune=native -march=native"])
+-			])
++            # do not mtune
++			#SXE_CHECK_COMPILER_FLAG([-xHost], [
++			#	optiflags="${optiflags} -xHost"], [
++			#	## non-icc
++			#	SXE_CHECK_COMPILER_FLAG([-mtune=native -march=native], [
++			#		optiflags="${optiflags} -mtune=native -march=native"])
++			#])
+ 			;;
+ 		esac
+ 	fi
